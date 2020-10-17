@@ -5,7 +5,6 @@
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "node",
-    "incremental": true,
     "baseUrl": "./",
     "paths": {
       "/@/*": ["src/*"]
