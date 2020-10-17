@@ -1,0 +1,4 @@
+{
+    // 去除 package.json 中验证失败的警告
+    "http.proxyStrictSSL": false
+}
