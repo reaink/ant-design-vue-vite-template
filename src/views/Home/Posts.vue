@@ -1,6 +1,6 @@
 <template>
   <a-list>
-    <a-list-item v-for="item in posts">{{ item }}</a-list-item>
+    <a-list-item v-for="(item, index) in posts" :key="index">{{ item }}</a-list-item>
   </a-list>
 </template>
 
