@@ -10,10 +10,10 @@
 </template>
 
 <script setup>
-  import { useRouter } from 'vue-router'
-  const router = useRouter()
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
-  export function toRoute(name) {
-    router.push({ name })
-  }
+export function toRoute(name) {
+  router.push({ name })
+}
 </script>

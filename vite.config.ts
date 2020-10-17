@@ -4,7 +4,7 @@ import { BuildConfig } from 'vite'
 
 const viteConfig: BuildConfig = {
   alias: {
-    '/@/': path.resolve(__dirname, 'src')
-  }
+    '/@/': path.resolve(__dirname, 'src'),
+  },
 }
 export default viteConfig
