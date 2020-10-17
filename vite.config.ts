@@ -1,8 +1,8 @@
 import path from 'path'
 
-import { ServerConfig } from 'vite'
+import { BuildConfig } from 'vite'
 
-const viteConfig: ServerConfig = {
+const viteConfig: BuildConfig = {
   alias: {
     '/@/': path.resolve(__dirname, 'src')
   }
