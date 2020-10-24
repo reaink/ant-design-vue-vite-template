@@ -3,6 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 export const routerHistory = createWebHistory()
 
+/**
+ * meta.layout 指定使用的 layouts 目录下的布局组件
+ */
 const router = createRouter({
   history: routerHistory,
   routes: [
@@ -35,7 +38,7 @@ const router = createRouter({
       name: 'About',
       component: defineAsyncComponent(() => import('/@/views/About.vue')),
       meta: {
-        layout: 'empty',
+        layout: 'empty', // 自定义布局
       },
     },
   ],
