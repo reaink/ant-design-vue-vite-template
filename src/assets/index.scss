@@ -5,3 +5,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// reset ant-design-color
+.ant-layout,
+.ant-layout-header,
+.ant-layout-footer {
+  background: #fff;
+}

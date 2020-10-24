@@ -34,6 +34,9 @@ const router = createRouter({
       path: '/about',
       name: 'About',
       component: defineAsyncComponent(() => import('/@/views/About.vue')),
+      meta: {
+        layout: 'empty',
+      },
     },
   ],
 })

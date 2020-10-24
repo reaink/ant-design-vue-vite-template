@@ -1,5 +1,5 @@
 <template>
-  <a-row class="mt-5">
+  <a-row class="mt-2">
     <router-view />
     <a-row type="flex" justify="center">
       <a-button @click="toRoute('Home')">Home</a-button>
