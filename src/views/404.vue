@@ -8,7 +8,7 @@
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
-export const router = useRouter()
+const router = useRouter()
 </script>
 
 <style lang="scss" scoped></style>
