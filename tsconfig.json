@@ -2,13 +2,25 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "allowSyntheticDefaultImports": true,
+    // 这样就可以对 `this` 上的数据属性进行更严格的推断`
     "strict": true,
+    "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
     "moduleResolution": "node",
+    "incremental": true,
     "baseUrl": "./",
     "paths": {
       "/@/*": ["src/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue"
+  ],
+  "files": [
+    "types/shims-vue.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
