@@ -49,6 +49,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-non-null-assertion': 0, // 允许非空断言运算符
     '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/no-unused-vars': 0,
     'vue/singleline-html-element-content-newline': 0,
   },
 }
