@@ -2,8 +2,9 @@
   <component :is="currentLayout" />
 </template>
 
-<script>
-import { defineAsyncComponent } from 'vue'
+<script lang="ts">
+import { Component, defineAsyncComponent } from 'vue'
+
 export default {
   name: 'VueExtendLayout2',
   props: {
@@ -30,7 +31,7 @@ export default {
     }
   },
   computed: {
-    currentLayout() {
+    currentLayout(): Component | void {
       if (!this.layoutName) return
       const ln = this.prefix + this.layoutName
       return defineAsyncComponent(() => import(`../${this.path}/${ln}.vue`))
