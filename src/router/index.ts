@@ -41,6 +41,20 @@ const router = createRouter({
         layout: 'empty', // 自定义布局
       },
     },
+    {
+      path: '/404',
+      name: 'NotFound',
+      component: defineAsyncComponent(() => import('/@/views/404.vue')),
+      meta: {
+        layout: 'empty',
+      },
+    },
+    {
+      path: '/:pathMatch(.*)',
+      redirect: {
+        name: 'NotFound',
+      },
+    },
   ],
 })
 

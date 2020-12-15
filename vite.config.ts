@@ -1,10 +1,16 @@
 import path from 'path'
 
-import { BuildConfig } from 'vite'
+import { UserConfig } from 'vite'
 
-const viteConfig: BuildConfig = {
+const viteConfig: UserConfig = {
+  rollupInputOptions: {
+    external: ['@popperjs/core'],
+  },
   alias: {
     '/@/': path.resolve(__dirname, 'src'),
+  },
+  optimizeDeps: {
+    include: ['@ant-design/icons-vue'],
   },
 }
 export default viteConfig

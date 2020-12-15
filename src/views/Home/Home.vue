@@ -1,5 +1,5 @@
 <template>
-  <a-row type="flex" justify="center">
+  <a-row class="w-100" type="flex" justify="center">
     <img src="/@/assets/logo.png" alt="Vue Logo" />
   </a-row>
   <div class="w-50 mx-auto">

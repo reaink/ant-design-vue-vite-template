@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-export const posts: string[] = [
+const posts: string[] = [
   'Nisi reprehenderit ipsum qui deserunt sit.',
   'Esse ex proident nostrud exercitation  enim.',
   'Magna sit ea deserunt exercitation deserunt.',

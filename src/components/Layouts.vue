@@ -33,7 +33,7 @@ export default {
     currentLayout() {
       if (!this.layoutName) return
       const ln = this.prefix + this.layoutName
-      return defineAsyncComponent(() => import(`/@/${this.path}/${ln}.vue`))
+      return defineAsyncComponent(() => import(`../${this.path}/${ln}.vue`))
     },
   },
   watch: {
