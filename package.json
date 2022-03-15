@@ -12,7 +12,7 @@
     "ant-design-vue": "^2.0.0-beta.10",
     "bootstrap": "^5.0.0-alpha2",
     "default-passive-events": "^2.0.0",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "moment": "^2.29.1",
     "popper.js": "^1.16.1",
     "rxjs": "^6.6.3",
